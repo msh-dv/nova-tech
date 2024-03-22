@@ -1,50 +1,62 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html lang="es-MX">
 <head>
   <meta charset="UTF-8">
-  <title>Animaciones CSS</title>
+  <title>Chanchitos Tech</title>
   <link rel="stylesheet" href="styles.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="images-sitio/letter-c-svgrepo-com.svg" sizes="32x32">
 </head>
 <body>
   <header id="main-header">
     <nav>
+      <img id="logo" src="images-sitio/logo.svg" alt="logo">
       <ul id="nav-bar">
 	<li><a href="#init">Inicio</a></li>
-	<li><a href="#second-section">Segundo</a></li>
-	<li><a href="#third-section">Tercero</a></li>
+	<li><a href="#second-section">Productos</a></li>
+	<li><a href="#third-section">Soporte</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <div class="sec-container" id="init">
-    <section class="content-section" id="main-section">
-      <div class="content">
-
-	<h1 id="main-title">Animaciones en CSS</h1>
-	<p>Las animaciones CSS3 permiten animar la transición entre un estilo CSS y otro.
-	Las animaciones constan de dos componentes: un estilo que describe la animación CSS
-	y un conjunto de fotogramas que indican su estado inicial y final, así como posibles
-	puntos intermedios en la misma.</p>
-	<p>Las animaciones CSS suelen tener algunas ventajas a las animaciones hechas con 
-	JavaScript, suelen ser mas sencillas de crear para animaciones simples, además de 
-	funcionar mejor en dispositivos poco potentes.</p>
-      </div>
+      <section class="content-section" id="main-section">
+	<div class="text-container">
+	  <div class="main-text">
+	    <h1 id="main-title"></h1>
+	    <p>Las animaciones CSS3 permiten animar la transición entre un estilo CSS y otro.
+	    Las animaciones constan de dos componentes: un estilo que describe la animación CSS
+	    y un conjunto de fotogramas que indican su estado inicial y final, así como posibles
+	    puntos intermedios en la misma.</p>
+	    <p>Las animaciones CSS suelen tener algunas ventajas a las animaciones hechas con 
+	    JavaScript, suelen ser mas sencillas de crear para animaciones simples, además de 
+	    funcionar mejor en dispositivos poco potentes.</p>
+	  </div>
+	</div>
     </section>
 
     </div>
-    <div class="sec-container" id="second-section">
-    <section class="content-section">
-      <div class="content">
-	<h2>Proin ac augue</h2>
-	<p>Duis velit magna, scelerisque vitae, varius ut, aliquam vel, justo.
-	Proin ac augue. Nullam auctor lectus vitae arcu. Vestibulum porta justo
-	placerat purus. Ut sem nunc, vestibulum nec, sodales vitae, vehicula
-	eget, ipsum. Sed nec tortor. Aenean malesuada. Nunc convallis, massa eu
-	vestibulum commodo, quam mauris interdum arcu, at pellentesque diam metus
-	ut.</p>
-	<!--/lorem-->
-
+    <div class="gallery-container" id="second-section">
+    <section class="products-section">
+      <div id="collage" class="content">
+	<div id="laptop" class="collage-item">
+	  <img src="images-sitio/laptop-2.jpeg" alt="">
+	</div>
+	<div id="phone" class="collage-item">
+	  <img src="images-sitio/phone-back.jpeg" alt="">
+	</div>
+	<div id="tablet-1" class="collage-item">
+	  <img src="images-sitio/tablet-1.jpeg" alt="">
+	</div>
+	<div id="tablet-2" class="collage-item">
+	  <img src="images-sitio/tablet-2.jpeg" alt="">
+	</div>
+	<div id="headphones-big" class="collage-item">
+	  <img src="images-sitio/headphones-big.jpeg" alt="">
+	</div>
+	<div id="headphones-small" class="collage-item">
+	  <img src="images-sitio/headphones-small.jpeg" alt="">
+	</div>
       </div>
     </section>
 
