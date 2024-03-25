@@ -8,19 +8,38 @@
   <link rel="icon" href="images-sitio/letter-n-svgrepo-com.svg" sizes="32x32">
 </head>
 <body>
+    <nav id="nav-menu">
+      <div class="bg"></div>
+      <div class="nav-button">
+	<a href="#">
+	<svg id="menu-icon-svg" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4 6H20M4 12H20M4 18H20" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+	</a>
+      </div>
+    </nav >
   <header id="main-header">
-    <nav>
+    <nav id="nav-header" >
       <!-- <img id="logo" src="images-sitio/logo.svg" alt="logo"> -->
       <a id="link-logo" href="#init">
 	<div class="logo">
 	  <span class="logo-text">NT</span>
 	</div>
       </a>
-      <ul id="nav-bar">
-	<li><a href="#init">Inicio</a></li>
-	<li><a href="#second-section">Productos</a></li>
-	<li><a href="#third-section">Soporte</a></li>
-      </ul>
+      <div class="nav-opt-container">
+	<ul id="nav-bar">
+	  <li><a href="#init">Inicio</a></li>
+	  <li><a href="#second-section">Productos</a></li>
+	  <li><a href="#third-section">Soporte</a></li>
+	</ul>
+	<div class="opt-container">
+	  <div class="user-container">
+	    <!-- <a class="opt-link" href="#"> -->
+	    <!--   <svg id="user-icon" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <circle cx="12" cy="9" r="3" stroke="#1C274C" stroke-width="1.5"/> <circle cx="12" cy="12" r="10" stroke="#1C274C" stroke-width="1.5"/> <path d="M17.9691 20C17.81 17.1085 16.9247 15 11.9999 15C7.07521 15 6.18991 17.1085 6.03076 20" stroke="#1C274C" stroke-width="1.5" stroke-linecap="round"/> </svg> -->
+	    <!-- </a> -->
+	  </div>
+	  <div class="small-menu">
+	  </div>
+	</div>
+      </div>
     </nav>
   </header>
   <main>
@@ -32,7 +51,7 @@
 	  </div>
 	  <div class="main-text">
 	    <h2 class="main-title">NovaPhone Pro</h2>
-	    <p> En <b>Nova Tech</b> , estamos emocionados de presentar nuestro último avance: 
+	    <p> En <b>Nova Tech</b>, estamos emocionados de presentar nuestro último avance: 
 	    El NovaPhone Pro. </p>
 	    <p> Diseñado para aquellos que exigen lo mejor en rendimiento, 
 	    estilo y funcionalidad, el NovaPhone Pro lleva la experiencia móvil 
@@ -43,54 +62,49 @@
     </section>
 
     </div>
-    <div class="gallery-container" id="second-section">
+  <div class="gallery-container" id="second-section">
     <section class="products-section">
-      <div id="collage" class="content">
-	<div id="laptop" class="collage-item">
+      <div id="collage" class="collage">
+
+	<div id="laptop" class="laptop collage-item">
 	  <img src="images-sitio/laptop-2.jpeg" alt="">
 	  <div class="over-info">
 	    <h2 class="over-title">NovaBook</h2>
-	    <p class="over-description"></p>
 	    <button class="over-button">Ver más</button>
 	  </div>
 	</div>
-	<div id="phone" class="collage-item">
+	<div id="phone" class="phone collage-item">
 	  <img src="images-sitio/phone-back.jpeg" alt="">
 	  <div class="over-info">
 	    <h2 class="over-title">NovaPhone</h2>
-	    <p class="over-description"></p>
 	    <button class="over-button">Ver más</button>
 	  </div>
 	</div>
-	<div id="tablet-1" class="collage-item">
+	<div id="tablet-1" class="tablet-1 collage-item">
 	  <img src="images-sitio/tablet-1.jpeg" alt="">
 	  <div class="over-info">
 	    <h2 class="over-title">NovaTab Lite</h2>
-	    <p class="over-description"></p>
 	    <button class="over-button">Ver más</button>
 	  </div>
 	</div>
-	<div id="tablet-2" class="collage-item">
+	<div id="tablet-2" class="tablet-2 collage-item">
 	  <img src="images-sitio/tablet-2.jpeg" alt="">
 	  <div class="over-info">
 	    <h2 class="over-title">NovaTab Pro</h2>
-	    <p class="over-description"></p>
 	    <button class="over-button">Ver más</button>
 	  </div>
 	</div>
-	<div id="headphones-big" class="collage-item">
+	<div id="headphones-big" class="headphones-big collage-item">
 	  <img src="images-sitio/headphones-big.jpeg" alt="">
 	  <div class="over-info">
 	    <h2 class="over-title-small">NovaBuds Pro</h2>
-	    <p class="over-description-small"></p>
 	    <button class="over-button">Ver más</button>
 	  </div>
 	</div>
-	<div id="headphones-small" class="collage-item">
+	<div id="headphones-small" class="headphones-small collage-item">
 	  <img src="images-sitio/headphones-small.jpeg" alt="">
 	  <div class="over-info">
 	    <h2 class="over-title-small">NovaBuds Lite</h2>
-	    <p class="over-description-small"></p>
 	    <button class="over-button">Ver más</button>
 	  </div>
 	</div>
