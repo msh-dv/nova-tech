@@ -222,6 +222,7 @@ body {
   touch-action: manipulation;
   transition: 300ms;
 }
+
 .button:active{
   background-color: var(--white);
 }
@@ -253,7 +254,6 @@ body {
   stroke: var(--eerie-black);
 }
 
-
 .util-section-small {
   display: none;
   padding: 1rem;
@@ -273,12 +273,10 @@ body {
   transition: 0.3s;
 }
 
-/* Remove this propiety */
-
-#settings-icon:hover{
-  transform: rotate(90deg);
-  transition: 0.3s;
-}
+/* #settings-icon:hover{ */
+/*   transform: rotate(90deg); */
+/*   transition: 0.3s; */
+/* } */
 
 #user-icon circle, path{
   stroke: var(--eerie-black);
