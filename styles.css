@@ -263,6 +263,17 @@ body {
   width:  2.1rem;
 }
 
+#settings-icon{
+  transition: 0.3s;
+}
+
+/* Remove this propiety */
+
+#settings-icon:hover{
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+
 #user-icon circle, path{
   stroke: var(--eerie-black);
 }
