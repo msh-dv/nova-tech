@@ -126,36 +126,83 @@ body {
   color:var(--eerie-black);
 }
 
-#nav-menu {
+#nav-container {
   position: fixed;
-  width: 100%;
   height: 100vh;
-  border: 1px solid white;
-  z-index:5;
+  width: 100%;
+  top:0;
+  pointer-events: none;
 }
 
-#nav-menu .bg {
+#nav-container .bg {
   position: absolute;
   top:3.5rem;
+  right: 0;
   width: 100%;
-  height:calc(100% - 3.5rem);
+  height: calc(100% - 3.5rem);
+  visibility: hidden;
+  opacity: 0;
+  transition: .3s;
+  background: var(--eerie-black);
 }
 
-.nav-button {
+#nav-container:focus-within .bg {
+  visibility: visible;
+  opacity: 0.6;
+}
+
+#nav-container * {
+  visibility: visible;
+}
+
+#nav-container:focus-within .button {
+  transform: rotate(90deg) ;
+  pointer-events: none;
+  transition: 300ms;
+}
+
+.button {
   position: absolute;
   top:0.3rem;
-  right: 0.5rem;
+  right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  cursor: pointer;
+  pointer-events: auto;
+  margin-left: 25px;
+  touch-action: manipulation;
   transition: 300ms;
 }
 
-.nav-button:focus-within{
-  transform: rotate(90deg);
-  transition: 300ms;
+#nav-content {
+  pointer-events: auto;
+  display: block;
+  width: 90%;
+  max-width: 36%;
+  position: absolute;
+  top: 3.5rem;
+  right: 0;
+  height: 100vh;
+  background: var(--white);
+  transform: translateX(100%);
+  transition: transform .3s;
+}
+
+#nav-container:focus-within #nav-content {
+  transform: none;
 }
 
 #menu-icon-svg {
-  width:  2.8rem;
-  height: 2.8rem;
+  width:  3rem;
+  height: 3rem;
+}
+
+#menu-icon-svg circle, path{
+  stroke: var(--eerie-black);
 }
 
 .nav-opt-container {
@@ -448,6 +495,19 @@ h1,h2,h3 {
 
   .small-menu {
     display: block;
+  }
+
+  #nav-content {
+    margin-top: 3.5rem;
+    width: 90%;
+    max-width: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    background: var(--white);
+    transform: translateX(100%);
+    transition: transform .3s;
   }
 
   .main-section{
