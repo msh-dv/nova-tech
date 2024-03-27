@@ -51,7 +51,7 @@ body {
   border-bottom: 1px solid #33333345;
   position: fixed;
   top:0;
-  z-index: 2;
+  z-index: 3;
   display: flex;
   align-items: center;
   box-shadow: 0 -1px 5px 1px #444;
@@ -538,30 +538,38 @@ main {
   font-size: 1.2rem;
 }
 
+#laptop-image {
+  mask-image: linear-gradient(90deg,transparent 0%, #222 25%);
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .os-section {
   width: 100%;
   height: 100vh;
   text-align: center;
   position: relative;
+  overflow: hidden;
 }
 
 #os-title {
   width: 100%;
-  font-size: 3rem;
+  font-size: 3.3rem;
   text-align: center;
   position: absolute;
-  top:0;
-  z-index: 1;
+  top:1rem;
+  z-index: 2;
 }
 
 #os-image {
-    filter: blur(2px);
   width: 100%;
+  filter:brightness(90%)  blur(4px);
+  object-fit: cover;
 }
 
 .dinam-title {
-  padding: 0 0.4rem;
-  margin: 0 0.4rem ;
+  padding: 0 0.5rem;
   transition: 400ms;
   border-radius: 1rem;
 }
@@ -572,11 +580,47 @@ main {
   transition: 400ms;
 }
 
-#laptop-image {
-  mask-image: linear-gradient(90deg,transparent 0%, #222 25%);
-  object-fit: cover;
+.os-text-container {
   width: 100%;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top:1rem;
+  z-index: 1;
+}
+
+.os-text {
+  border-radius: 1rem;
+  width: 50%;
+  padding: 1rem 2rem;
+  height:fit-content;
+  backdrop-filter: blur(8px);
+  background-color: #f3f3f3af;
+}
+
+.os-text p{
+  font-weight: 500;
+  color:var(--eerie-black);
+  text-align: left;
+  font-size: 1.5rem;
+}
+
+.os-text p:nth-child(2n){
+  text-align: center;
+}
+
+.hover-os-text{ 
+  padding: 0 0.3rem;
+  transition: 300ms;
+  border-radius: 0.5rem;
+}
+
+.hover-os-text:hover{ 
+  background-color: var(--eerie-black);
+  color: var(--white);
+  transition: 300ms;
 }
 
 @media screen and (max-width:768px){
@@ -692,9 +736,29 @@ main {
   }
 
   #os-image {
-    filter: blur(2px);
     object-fit: cover;
     height: 100%;
+    mask-image: linear-gradient(0deg, var(--white) 65%, transparent 100%);
+  }
+
+  #os-title {
+    top:2rem;
+  }
+
+  .os-text {
+    border-radius: 1rem;
+    width: 80%;
+    padding:1rem 2rem;
+    height:fit-content;
+    backdrop-filter: blur(8px);
+    background-color: #f3f3f39f;
+  }
+
+  .os-text p{
+    font-weight: 500;
+    color:var(--eerie-black);
+    text-align: left;
+    font-size: 1.3rem;
   }
 
   .over-info .over-title-small {
