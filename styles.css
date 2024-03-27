@@ -1,19 +1,19 @@
 :root {
+
   --letter-space:0.1rem;
 
   /* paleta monocromatica */
 
-/* CSS HEX */
---black: #000000ff;
---eerie-black: #1c1c1cff;
---jet: #393939ff;
---davys-gray: #555555ff;
---dim-gray: #717171ff;
---battleship-gray: #8e8e8eff;
---silver: #aaaaaaff;
---silver-2: #c6c6c6ff;
---platinum: #e3e3e3ff;
---white: #ffffffff;
+  --black: #000000ff;
+  --eerie-black: #1c1c1cff;
+  --jet: #393939ff;
+  --davys-gray: #555555ff;
+  --dim-gray: #717171ff;
+  --battleship-gray: #8e8e8eff;
+  --silver: #aaaaaaff;
+  --silver-2: #c6c6c6ff;
+  --platinum: #e3e3e3ff;
+  --white: #ffffffff;
 
 }
 
@@ -44,6 +44,7 @@ body {
   align-items: center;
 }
 
+
 #main-header {
   width: 100%;
   height: 3.5rem;
@@ -69,6 +70,7 @@ body {
   border:2px solid var(--eerie-black);
   border-radius: 0.5rem;
 }
+
 .logo .logo-text {
   font-size: 1.8rem;
   font-weight: 500;
@@ -84,7 +86,7 @@ body {
 }
 
 .nav-util-container {
-  width: 35%;
+  width: 38%;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -111,12 +113,15 @@ body {
   z-index: 2;
 }
 
+.nav-section {
+  padding: 0;
+}
+
 #nav-bar-small {
-  display: none;
   width: 100%;
   padding: 0;
   margin: 0;
-  list-style: none;
+  list-style:none;
   display: flex;
   flex-flow: column;
   z-index: 2;
@@ -132,19 +137,23 @@ body {
   color:var(--eerie-black);
 }
 
+#nav-bar-small li{
+  display: flex;
+  padding: 0.8rem 0.8rem 0.8rem 0rem;
+}
+
 #nav-bar-small a{
-  padding: 0.3rem 1rem;
+  padding-left: 2rem;
+  width: 100%;
   display: block;
   letter-spacing: var(--letter-space);
   font-weight: 500;
-  width: 100%;
-  font-size: 1.7rem;
+  font-size: 1.9rem;
   position: relative;
   display: inline-block;
   text-decoration: none;
   color:var(--eerie-black);
- }
-
+}
 
 #nav-bar a::after, #nav-bar-small a::after {
   content: '';
@@ -176,6 +185,7 @@ body {
   top:0;
   pointer-events: none;
 }
+
 
 #nav-container .bg {
   position: absolute;
@@ -229,7 +239,6 @@ body {
 
 #nav-content {
   pointer-events: auto;
-  display: block;
   width: 90%;
   max-width: 36%;
   position: absolute;
@@ -256,12 +265,11 @@ body {
 
 .util-section-small {
   display: none;
-  padding: 1rem;
+  padding:1rem 2rem;
   width: 100%;
   display: flex;
-  gap:1rem;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 #user-icon, #settings-icon {
@@ -272,11 +280,6 @@ body {
 #settings-icon{
   transition: 0.3s;
 }
-
-/* #settings-icon:hover{ */
-/*   transform: rotate(90deg); */
-/*   transition: 0.3s; */
-/* } */
 
 #user-icon circle, path{
   stroke: var(--eerie-black);
@@ -554,6 +557,7 @@ main {
 }
 
 #os-title {
+  color:var(--jet);
   width: 100%;
   font-size: 3.3rem;
   text-align: center;
@@ -577,7 +581,7 @@ main {
 
 .dinam-title:hover {
   background-color: var(--eerie-black);
-  color: white;
+  color: var(--white);
   transition: 400ms;
 }
 
@@ -593,19 +597,23 @@ main {
 }
 
 .os-text {
+  display: flex;
+  flex-flow:column ;
+  justify-content: center;
+  align-items: center;
   border-radius: 1rem;
-  width: 50%;
+  width: 45%;
   padding: 1rem 2rem;
-  height:fit-content;
+  height:50%;
   backdrop-filter: blur(8px);
-  background-color: #f3f3f3af;
+  background-color: #ffffffaf;
 }
 
 .os-text p{
+  color:var(--jet);
   font-weight: 500;
-  color:var(--eerie-black);
   text-align: left;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
 }
 
 .os-text p:nth-child(2n){
@@ -624,6 +632,136 @@ main {
   transition: 300ms;
 }
 
+.support-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.support-container {
+  padding-top:1rem ;
+  width: 80%;
+  height: 90%;
+}
+
+.support-products > p, h2 {
+  text-align: center;
+}
+
+.support-products p {
+  font-size: 1.5rem;
+}
+
+.support-products h2 {
+  font-size: 2.8rem;
+}
+
+.support-gallery{
+  padding: 1rem 0;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+}
+
+.support-item {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.support-item svg {
+  width:  100%;
+  height: 5.5rem;
+  transition: 300ms;
+}
+
+.support-gallery svg path{
+  fill: var(--white);
+}
+
+.support-item svg:hover{
+  transform: translateY(-5px);
+  transition: 300ms;
+}
+
+.support-item p {
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.contact {
+  text-align: center;
+  display: flex;
+  flex-flow: column;
+}
+
+.support-button {
+  margin: auto;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.2rem;
+  padding: 0 1rem;
+  height: 3rem;
+  border:none;
+  border-radius:0.5rem;
+  background-color: var(--eerie-black);
+  color:var(--white);
+  transition:300ms;
+}
+
+.support-button:hover {
+  background-color: var(--white);
+  color:var(--eerie-black);
+  transition:300ms;
+}
+
+footer {
+  padding: 2rem;
+  width: 100%;
+  height: 50vh;
+  background-color: var(--eerie-black);
+  color: var(--white);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap:2rem
+}
+
+footer *::selection{
+  background-color: var(--white);
+  color:var(--eerie-black);
+}
+
+.copy {
+  display: flex;
+  align-items: center;
+}
+
+.links {
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.links p{
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.link svg{
+  width: 3rem;
+  fill:var(--white);
+  transition: 300ms;
+}
+
+.link svg:hover{
+  transform: translateY(-5px);
+  transition: 300ms;
+}
+
 @media screen and (max-width:768px){
 
   html{
@@ -633,7 +771,7 @@ main {
   #main-header{
     height: 4rem;
   }
-  
+
   .nav-util-container {
     display: none;
   }
@@ -748,7 +886,7 @@ main {
 
   .os-text {
     border-radius: 1rem;
-    width: 80%;
+    width: 90%;
     padding:1rem 2rem;
     height:fit-content;
     backdrop-filter: blur(8px);
@@ -762,11 +900,39 @@ main {
     font-size: 1.3rem;
   }
 
+  .support-gallery{
+    display: flex;
+    flex-flow: row wrap;
+    gap:1rem;
+    justify-content: space-evenly;
+  }
+
+  .support-products h2 {
+    font-size: 2.3rem;
+    text-wrap: balance;
+  }
+
+  .support-products p {
+    font-size: 1.3rem;
+  }
+
+  .support-item svg {
+    width:  100%;
+    height: 6.5rem;
+    transition: 300ms;
+  }
+
+  .support-item{
+    flex:150px;
+  }
+
   .over-info .over-title-small {
     font-size: 2rem;
     font-weight: 500;
   }
+
+  footer {
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr;
+  }
 }
-
-
-
