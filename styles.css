@@ -564,8 +564,9 @@ main {
 
 #os-image {
   width: 100%;
-  filter:brightness(90%)  blur(4px);
+  filter: blur(4px);
   object-fit: cover;
+  overflow: hidden;
 }
 
 .dinam-title {
@@ -742,7 +743,7 @@ main {
   }
 
   #os-title {
-    top:2rem;
+    top:3rem;
   }
 
   .os-text {
