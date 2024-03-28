@@ -20,6 +20,7 @@
 	      <a href="#user-info">
 		<svg id="user-icon" width="20px" height="20px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17 8C17 10.7614 14.7614 13 12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8Z" stroke="#323232" stroke-width="2"/> <path d="M3 21C3.95728 17.9237 6.41998 17 12 17C17.58 17 20.0427 17.9237 21 21" stroke="#323232" stroke-width="2" stroke-linecap="round"/> </svg>
 	      </a>
+	      <p id="user-name">Juan Carlos</p>
 	    </div>
 	    <div class="settings">
 	      <a href="#settings">
@@ -46,7 +47,12 @@
 	<div class="nav-util-container">
 	  <ul id="nav-bar">
 	    <li><a href="#init">Novedades</a></li>
-	    <li><a href="#second-section">Productos</a></li>
+	    <li id="products-slide-menu"><a href="#second-section">Productos</a>
+	      <ul id="sub-nav-content">
+		<li><a href="#third-section">NovaBook</a></li>
+		<li><a href="#os-section">NovaOS</a></li>
+	      </ul>
+	    </li>
 	    <li><a href="#support">Soporte</a></li>
 	  </ul>
 	  <div class="util-section">
@@ -171,19 +177,19 @@
 		  <a href="#">
 		    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M19 16.5H5M19 16.5C19.5523 16.5 20 16.0523 20 15.5V6.5C20 5.94772 19.5523 5.5 19 5.5H5C4.44772 5.5 4 5.94771 4 6.5V15.5C4 16.0523 4.44772 16.5 5 16.5M19 16.5H20.25C20.9404 16.5 21.5 17.0596 21.5 17.75C21.5 18.4404 20.9404 19 20.25 19H3.75C3.05964 19 2.5 18.4404 2.5 17.75C2.5 17.0596 3.05964 16.5 3.75 16.5H5" stroke="#000000" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>
 		  </a>
-		  <p>Laptop</p>
+		  <p>Laptops</p>
 		</div>
 		<div id="support-phone" class="support-item">
 		  <a href="#">
 		    <svg fill="#000000" width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" d="M7,2 L17,2 C18.1045695,2 19,2.8954305 19,4 L19,20 C19,21.1045695 18.1045695,22 17,22 L7,22 C5.8954305,22 5,21.1045695 5,20 L5,4 C5,2.8954305 5.8954305,2 7,2 Z M7,4 L7,20 L17,20 L17,4 L7,4 Z M12,19 C11.4477153,19 11,18.5522847 11,18 C11,17.4477153 11.4477153,17 12,17 C12.5522847,17 13,17.4477153 13,18 C13,18.5522847 12.5522847,19 12,19 Z"/> </svg>
 		  </a>
-		  <p>SmartPhone</p>
+		  <p>SmartPhones</p>
 		</div>
 		<div id="support-tablet" class="support-item">
 		  <a href="#">
 		    <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M4 7C4 5.11438 4 4.17157 4.58579 3.58579C5.17157 3 6.11438 3 8 3H12H16C17.8856 3 18.8284 3 19.4142 3.58579C20 4.17157 20 5.11438 20 7V12V17C20 18.8856 20 19.8284 19.4142 20.4142C18.8284 21 17.8856 21 16 21H12H8C6.11438 21 5.17157 21 4.58579 20.4142C4 19.8284 4 18.8856 4 17V12V7Z" stroke="#323232" stroke-width="2" stroke-linejoin="round"/> <path d="M11.5 18H12.5" stroke="#323232" stroke-width="2" stroke-linecap="round"/> </svg>
 		  </a>
-		  <p>Tablet</p>
+		  <p>Tablets</p>
 		</div>
 		<div id="support-headphone" class="support-item">
 		  <a href="#">
@@ -206,7 +212,7 @@
     <p>&copy; 2024 msh-dv. Todos los derechos reservados. Este sitio web es ficticio y ha sido creado con propósitos de prueba y demostración. Todos los productos, marcas y nombres mencionados son ficticios y no representan a empresas o productos reales. Las imágenes utilizadas son de carácter ilustrativo. Gracias por visitarnos y por tu comprensión.</p>
     </div>
     <div class="links">
-      <p>Sigueme en:</p>
+      <p>Sígueme en:</p>
       <div id="GitHub" class="link">
 	<a target="_blank" href="https://github.com/msh-dv/">
 	  <svg viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> </defs> <g id="Page-1" stroke="none" stroke-width="1" > <g id="Dribbble-Light-Preview" transform="translate(-140.000000, -7559.000000)" > <g id="icons" transform="translate(56.000000, 160.000000)"> <path d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399" id="github-[#142]"> </path> </g> </g> </g> </svg>
