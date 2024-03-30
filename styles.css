@@ -120,7 +120,7 @@ body {
 #sub-nav-content{
   width: 100%;
   margin-top: 0.1rem;
-  height: 0rem;
+  height: 0;
   padding: 0;
   padding-top: 0.2rem;
   background-color: var(--white);
@@ -174,12 +174,12 @@ body {
 
 #nav-bar-small li{
   display: flex;
-  padding: 0.8rem 0.8rem 0.8rem 0rem;
+  padding: 0.8rem 0 0.8rem 0;
 }
 
 #nav-bar-small a{
-  padding-left: 2rem;
   width: 100%;
+  padding-left:2rem;
   display: block;
   letter-spacing: var(--letter-space);
   font-weight: 500;
@@ -188,6 +188,53 @@ body {
   display: inline-block;
   text-decoration: none;
   color:var(--eerie-black);
+}
+
+#movile-sub-menu { 
+  position: relative;
+  display: flex;
+  flex-flow: column;
+}
+
+#movile-sub-menu a { 
+  display: flex;
+  align-items: center;
+  gap:1rem;
+}
+
+#arrow {
+  width:  1.2rem;
+  height: 1.2rem;
+  fill:var(--eerie-black);
+  transition:300ms;
+}
+
+#movile-sub-content { 
+  display: flex;
+  padding: 0;
+  flex-flow: column;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  transition: 300ms;
+  transform-origin:bottom top;
+}
+
+#movile-sub-menu:hover #movile-sub-content{ 
+  height:100%;
+  opacity: 1;
+  transition: 300ms;
+  transform-origin: bottom top;
+}
+
+#movile-sub-menu:hover #arrow{ 
+  transform:rotate(90deg);
+  transition: 300ms;
+}
+
+#movile-sub-content a{ 
+  padding-left: 3rem;
+  font-size: 1.5rem;
 }
 
 #nav-bar a::after, #nav-bar-small a::after {
@@ -843,7 +890,7 @@ footer *::selection{
 
   #nav-content {
     margin-top: 4rem;
-    width: 100%;
+    width: 70%;
     max-width: 100%;
     position: absolute;
     top: 0;
@@ -855,8 +902,8 @@ footer *::selection{
   }
 
   #user-icon, #settings-icon {
-    height: 2.8rem;
-    width:  2.8rem;
+    height: 2.5rem;
+    width:  2.5rem;
   }
 
   .main-section{
