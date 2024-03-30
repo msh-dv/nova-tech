@@ -44,7 +44,6 @@ body {
   align-items: center;
 }
 
-
 #main-header {
   width: 100%;
   height: 3.5rem;
@@ -812,7 +811,7 @@ main {
 
 .support-button:hover {
   background-color: var(--white);
-  color:var(--eerie-black);
+  color:var(--jet);
   transition:300ms;
 }
 
@@ -1033,5 +1032,17 @@ footer *::selection{
   footer {
     grid-template-columns:1fr;
     grid-template-rows:1fr 1fr;
+  }
+
+  .link svg{
+    width: 2.5rem;
+    fill:var(--white);
+    transition: 300ms;
+  }
+}
+
+@media screen and (max-width:350px){
+  html{
+    font-size: 9px;
   }
 }
