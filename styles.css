@@ -328,6 +328,11 @@ body {
   transition: 0.3s;
 }
 
+#settings-icon:hover{
+  transform: rotate(90deg);
+  transition: 0.3s;
+}
+
 #user-icon circle, path{
   stroke: var(--eerie-black);
 }
