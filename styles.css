@@ -810,8 +810,8 @@ main {
 }
 
 .support-button:hover {
-  background-color: var(--white);
-  color:var(--jet);
+  background-color: var(--jet);
+  color:var(--white);
   transition:300ms;
 }
 
