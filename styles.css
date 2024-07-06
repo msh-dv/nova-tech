@@ -87,7 +87,7 @@ body {
 }
 
 .nav-util-container {
-  width: 38%;
+  width: 35%;
   display: flex;
   flex-flow: row;
   justify-content: space-between;
@@ -839,7 +839,7 @@ footer {
   background-color: var(--eerie-black);
   color: var(--white);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
   grid-template-rows: 1fr;
   gap: 2rem;
 }
@@ -867,7 +867,7 @@ footer *::selection {
 }
 
 .link svg {
-  width: 3rem;
+  width: 2.5rem;
   fill: var(--white);
   transition: 300ms;
 }
